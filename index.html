@@ -66,20 +66,12 @@
         <div class="container">
 
           <div class="row">
-            <div class="col-sm-12 col-md-6">
+            <div class="col-sm-12">
               <div class="card mb-4 box-shadow">
                 <!-- Add an image that we will use to test -->
-                <img id="img" crossOrigin src="https://i.imgur.com/JlUvsxa.jpg" width=227 height=227/>
+                <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
                 <div class="card-body">
-                  <p class="card-text">That is an image that we will use to test</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-6">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">Lista predykcji</p>
+                  <p class="card-text">Let's set up the webcam to make predictions on images that come through the webcam</p>
                 </div>
               </div>
             </div>
@@ -96,7 +88,7 @@
       </div>
     </footer>
 
-    <!-- Load index.js after the content of the page -->
+    <!-- Load predict.js after the content of the page -->
     <script src="predict.js"></script>
 
 
