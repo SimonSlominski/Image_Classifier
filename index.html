@@ -8,6 +8,8 @@
         <!-- Load the latest version of TensorFlow.js -->
     <script src="https://unpkg.com/@tensorflow/tfjs"></script>
     <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+    <link href="style.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -22,8 +24,7 @@
           <div class="row">
             <div class="col-sm-8 col-md-7 py-4">
               <h4 class="text-white">About</h4>
-              <p class="text-muted">This is a image classifier based on Keras, MobileNet and TensorFlow.js
-              ADD Instructions
+              <p class="text-muted">This is an image classifier based on MobileNet and TensorFlow.js
               </p>
             </div>
             <div class="col-sm-4 offset-md-1 py-4">
@@ -52,11 +53,11 @@
 
       <section class="jumbotron text-center">
         <div class="container">
-          <h1 class="jumbotron-heading">Classify your image. <br> Select a photo.</h1>
+          <h1 class="jumbotron-heading">Classify your image from the webcam. <br></h1>
         </div>
       </section>
 
-
+      <!--Prediction bar-->
       <div id="console"></div>
 
 
@@ -68,16 +69,26 @@
           <div class="row">
             <div class="col-sm-12">
               <div class="card mb-4 box-shadow">
+                <br>
                 <!-- Add an image that we will use to test -->
-                <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+                <video class="center" autoplay playsinline muted id="webcam" width="640" height="480" ></video>
                 <div class="card-body">
-                  <p class="card-text">Let's set up the webcam to make predictions on images that come through the webcam</p>
+                  <p>
+                    <button class="col-sm-3" id="class-a">Add A</button>
+                    <button class="col-sm-3" id="class-b">Add B</button>
+                    <button class="col-sm-3" id="class-c">Add C</button>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="container">
+
+      </div>
+
 
     </main>
 
